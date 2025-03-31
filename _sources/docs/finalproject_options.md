@@ -24,17 +24,17 @@ With support from the [Dartmouth Center for Social Impact](https://students.dart
  -->
 <!-- If you choose this project option, you have two options. The first is to analyze the results of medical student training for prescribing to folks with Intellectual and Developmental Disabilities (IDD). The second is to study a large dataset on experiences and outcomes for START participants. -->
 
-### SIP Option 1: 21st Century Community Learning Centers
+### SIP Option: 21st Century Community Learning Centers
 
 The 21st Century Community Learning Centers (21C) program for the Vermont Agency of Education has collected from about 90 sites offering 21C-supported afterschool and summer programs in Vermont. The dataset includes both quantitative data (for example, the % of students from low-income families and the number of students receiving different “doses” of afterschool/summer programs) and qualitative data (for example, descriptions of exemplary projects from each program). Students can use this data to evaluate the efficacy of afterschool and summer programs.
 
-### SIP Option 2: New Hampshire Academy of Science
+<!-- ### SIP Option 2: New Hampshire Academy of Science
 
 In rural areas such as the Upper Valley, participants often claim to have learned of new initiatives by “word of mouth”. Unfortunately, while this may be an effective communication tool among affluent communities, research indicates that it does not necessarily reach those who are less financially secure. NHAS has secured a generous amount of financial aid to increase the socioeconomic representation in the scientific community but unless applicants from less affluent communities know about, and subsequently apply to, NHAS programs, these financial resources go unused.
 
 To that end, NHAS is hoping Dartmouth students can work with data gathered by NHAS educational research surveys and registration data for NHAS patrons of current programs and camps to explore which communities in the Upper Valley are underrepresented in their program. This aligns with a broader goal of ensuring that the scientific community is accessible, regardless of socioeconomics, and truly representative of the broader community at large.
 
-Part of this project should also include ideas about how to both collect the sensitive data that is likely to be yielded from the survey as well as how to evaluate and use the data gathered most effectively.
+Part of this project should also include ideas about how to both collect the sensitive data that is likely to be yielded from the survey as well as how to evaluate and use the data gathered most effectively.-->
 
 
 <!-- The data cuts to an important issue in public health: *How do medical professionals interact with patients with IDD, and how can medical student training improve this?* Here is more information from the project partner:
@@ -105,7 +105,7 @@ Second, in recent years, text-based social media has given way to visual-based s
 
 If you're already pursuing a significant research project, you may use this course to advance an existing work in progress, covering parts and analysis you might not include otherwise. This is intended to build toward your thesis. If you are already enrolled in a thesis course, I will need to coordinate with your other professor. If in doubt, please ping me on Slack or email.
 
-The project needs to align with the [evaluation criteria](https://github.com/herbertfreeze/QSS_Public/blob/main/finalproj_guidelines/final_project_rubric.csv) — e.g., it must result in data you can share with us, a repo you can share, and a 10-page CS-style report.
+The project needs to align with the [evaluation criteria](https://github.com/herbertfreeze/QSS20_S25/blob/main/finalproj_guidelines/final_project_rubric.csv) — e.g., it must result in data you can share with us, a repo you can share, and a 10-page CS-style report.
 
 Please choose this option with caution as you will be held to same grading standard as groups of 3-4. Moreover, unless you have already made substantial progress on an independent project, you probably won't be able to finish it in one short quarter.
 

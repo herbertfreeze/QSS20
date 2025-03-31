@@ -42,8 +42,8 @@ The goal of this course is for students to become better data scientists. Studen
 * Prof. OH: 9-10 AM Monday/Wednesday at **124 Silsby**; if you'd like to meet about research outside the course, send me times that work for you and we can schedule something.
 * Group tutoring TBD
 <!-- with Eleanor Sullivan: [sign up here](https://grouptutoring.dartmouth.edu/terms/23W/groups/12210); 7-8 PM Monday in Reed 101, 9-10 PM Thursday in Baker 370, 8-9 PM Sunday in Dart 002; [Zoom as an alternate](https://dartmouth.zoom.us/j/96707419408?pwd=SzJPYVQ1M0RRZmUzWWpJMzFZWXdHdz09). Tutoring begins in the second week of the quarter. -->
-<!-- * Emma OH: 4:30  - 5:30 PM Tuesday (Kemeny 105)
-* Sabin OH: 1:30 - 2:30 PM Friday (Haldeman 46) -->
+<!-- * Ming OH: 4:30  - 5:30 PM Tuesday (Kemeny 105)
+* Tracy OH: 1:30 - 2:30 PM Friday (Haldeman 46) -->
 
 
 ## DataCamp as learning resource

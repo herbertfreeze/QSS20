@@ -17,7 +17,7 @@ kernelspec:
 
 There is a Slack channel for the course, suitable for general questions, Python, and Latex:
 
-    - `qss20-F24`: logistics, schedule, projects, clarification, due dates, and announcements, and general chat.
+    - `qss20-S25`: logistics, schedule, projects, clarification, due dates, and announcements, and general chat.
 
 - **Locally-installed Python**. While cloud computing is common in data science, the baseline for code development is to work locally. So the main interface we will use to code is your own laptop, on which you will install Python and relevant packages. 
 

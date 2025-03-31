@@ -335,15 +335,15 @@ document.write(`
 <span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
 
 <span class="c1"># create range b/t start and end date of course</span>
-<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2024-09-16&quot;</span><span class="p">)</span>
-<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2024-11-19&quot;</span><span class="p">)</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2025-04-01&quot;</span><span class="p">)</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2025-06-04&quot;</span><span class="p">)</span>
 <span class="n">alldates</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
 
 <span class="c1"># subset to days in that range equal to Tuesday and Thursday</span>
 <span class="n">tt</span> <span class="o">=</span> <span class="n">alldates</span><span class="p">[</span><span class="n">alldates</span><span class="o">.</span><span class="n">day_name</span><span class="p">()</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">])</span> <span class="p">]</span>
 
 <span class="c1"># create DataFrame with that information</span>
-<span class="n">qss20_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;2024</span><span class="se">\\</span><span class="s2">-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">day</span><span class="o">.</span><span class="n">date</span><span class="p">()))</span> <span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">tt</span><span class="p">]</span>
+<span class="n">qss20_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;2025</span><span class="se">\\</span><span class="s2">-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">day</span><span class="o">.</span><span class="n">date</span><span class="p">()))</span> <span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">tt</span><span class="p">]</span>
 <span class="n">course_sched</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;dow&#39;</span><span class="p">:</span> <span class="n">tt</span><span class="o">.</span><span class="n">day_name</span><span class="p">(),</span>
                              <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">qss20_dates</span><span class="p">})</span>
 <span class="n">course_sched</span><span class="p">[</span><span class="s1">&#39;day_date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">course_sched</span><span class="o">.</span><span class="n">dow</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> \
@@ -356,25 +356,25 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 09-17
-1     Thursday 09-19
-2      Tuesday 09-24
-3     Thursday 09-26
-4      Tuesday 10-01
-5     Thursday 10-03
-6      Tuesday 10-08
-7     Thursday 10-10
-8      Tuesday 10-15
-9     Thursday 10-17
-10     Tuesday 10-22
-11    Thursday 10-24
-12     Tuesday 10-29
-13    Thursday 10-31
-14     Tuesday 11-05
-15    Thursday 11-07
-16     Tuesday 11-12
-17    Thursday 11-14
-18     Tuesday 11-19
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 04-01
+1     Thursday 04-03
+2      Tuesday 04-08
+3     Thursday 04-10
+4      Tuesday 04-15
+5     Thursday 04-17
+6      Tuesday 04-22
+7     Thursday 04-24
+8      Tuesday 04-29
+9     Thursday 05-01
+10     Tuesday 05-06
+11    Thursday 05-08
+12     Tuesday 05-13
+13    Thursday 05-15
+14     Tuesday 05-20
+15    Thursday 05-22
+16     Tuesday 05-27
+17    Thursday 05-29
+18     Tuesday 06-03
 Name: day_date, dtype: object
 </pre></div>
 </div>
@@ -392,19 +392,19 @@ Name: day_date, dtype: object
 
 <span class="c1"># list of concepts</span>
 <span class="n">concepts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Course intro. &amp; syllabus review&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;No Class (@Conference)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Python basics (variables, lists, arrays) &amp; software setup&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Pandas for data manipulation 1 + static data visualization&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Pandas 2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Pandas 2 (X-hour)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;User-defined functions&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Workflow basics: command line &amp; Github&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Merging data&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;No Class (@Conference)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Regular expressions (Regex)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text-as-data 1 (text mining)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text-as-data 2 (topic modeling)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;APIs&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Social Network Visualization&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Homecoming Weekend&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Green Key Weekend (let&#39;s be real)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Supervised machine learning 1&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Supervised machine learning 2&quot;</span><span class="p">,</span>
             <span class="s2">&quot;SQL&quot;</span><span class="p">,</span>
@@ -427,25 +427,25 @@ Name: day_date, dtype: object
 </details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              Date                                           Concepts
-0    Tuesday 09-17                    Course intro. &amp; syllabus review
-1   Thursday 09-19  Python basics (variables, lists, arrays) &amp; sof...
-2    Tuesday 09-24  Pandas for data manipulation 1 + static data v...
-3   Thursday 09-26                                           Pandas 2
-4    Tuesday 10-01                             User-defined functions
-5   Thursday 10-03             Workflow basics: command line &amp; Github
-6    Tuesday 10-08                                       Merging data
-7   Thursday 10-10                             No Class (@Conference)
-8    Tuesday 10-15                        Regular expressions (Regex)
-9   Thursday 10-17                       Text-as-data 1 (text mining)
-10   Tuesday 10-22                    Text-as-data 2 (topic modeling)
-11  Thursday 10-24                                               APIs
-12   Tuesday 10-29                       Social Network Visualization
-13  Thursday 10-31                                 Homecoming Weekend
-14   Tuesday 11-05                      Supervised machine learning 1
-15  Thursday 11-07                      Supervised machine learning 2
-16   Tuesday 11-12                                                SQL
-17  Thursday 11-14              Common Distribs; Project work session
-18   Tuesday 11-19                                Final presentations
+0    Tuesday 04-01                    Course intro. &amp; syllabus review
+1   Thursday 04-03                             No Class (@Conference)
+2    Tuesday 04-08  Python basics (variables, lists, arrays) &amp; sof...
+3   Thursday 04-10  Pandas for data manipulation 1 + static data v...
+4    Tuesday 04-15                                  Pandas 2 (X-hour)
+5   Thursday 04-17                             User-defined functions
+6    Tuesday 04-22             Workflow basics: command line &amp; Github
+7   Thursday 04-24                                       Merging data
+8    Tuesday 04-29                        Regular expressions (Regex)
+9   Thursday 05-01                       Text-as-data 1 (text mining)
+10   Tuesday 05-06                    Text-as-data 2 (topic modeling)
+11  Thursday 05-08                                               APIs
+12   Tuesday 05-13                       Social Network Visualization
+13  Thursday 05-15                  Green Key Weekend (let&#39;s be real)
+14   Tuesday 05-20                      Supervised machine learning 1
+15  Thursday 05-22                      Supervised machine learning 2
+16   Tuesday 05-27                                                SQL
+17  Thursday 05-29              Common Distribs; Project work session
+18   Tuesday 06-03                                Final presentations
 </pre></div>
 </div>
 </div>
@@ -460,7 +460,7 @@ Name: day_date, dtype: object
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define DataCamp modules</span>
 <span class="n">modules</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Intro. to Python (chpts. 2-3)&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Data Manipulation with pandas (course)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Data Manipulation with pandas (course)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Writing your own functions (chpt.)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Intro. to Shell, Intro. to GitHub (chpts.)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Joining Data with pandas (chpts. 1-2)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
@@ -468,7 +468,7 @@ Name: day_date, dtype: object
            <span class="s2">&quot;Text preprocessing, POS tagging and NER (chpt.)&quot;</span><span class="p">,</span>
            
            <span class="s2">&quot;&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Supervised Learning with scikit-learn (course)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Intro. to SQL (chpts. 1-2)&quot;</span><span class="p">,</span>
@@ -488,15 +488,15 @@ Name: day_date, dtype: object
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define assignments</span>
-<span class="n">assignments</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;First Latex Submission (solo, due Sunday 09-22)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Problem set one (submit as group; due Monday 09-30)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final Project Form (due Thursday 10-10)&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Problem set two (due Monday 10-14)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final project milestone 1 (due Thursday 10-31)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Problem set three (due Monday 10-28)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final project milestone 2 (due Thursday 11-07) &quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Problem set four (due Friday 11-11)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final project presentation (paper due Tuesday 11-26)&quot;</span><span class="p">]</span>
+<span class="n">assignments</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;First Latex Submission (solo, due Sunday 04-06)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Problem set one (submit as group; due Monday 04-18)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Final Project Form (due Thursday 04-28)&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Problem set two (due Monday 04-28)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Final project milestone 1 (due Wednesday 05-14)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Problem set three (due Wednesday 05-14)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Final project milestone 2 (due Thursday 05-26) &quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Problem set four (due Friday 05-26)&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Final project presentation (paper due Tuesday 06-09)&quot;</span><span class="p">]</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">assignments</span>
 </pre></div>
@@ -522,118 +522,118 @@ Name: day_date, dtype: object
   </thead>
   <tbody>
     <tr>
-      <td>Tuesday 09-17</td>
+      <td>Tuesday 04-01</td>
       <td>Course intro. & syllabus review</td>
       <td></td>
-      <td>First Latex Submission (solo, due Sunday 09-22)</td>
+      <td>First Latex Submission (solo, due Sunday 04-06)</td>
     </tr>
     <tr>
-      <td>Thursday 09-19</td>
-      <td>Python basics (variables, lists, arrays) & software setup</td>
+      <td>Thursday 04-03</td>
+      <td>No Class (@Conference)</td>
       <td>Intro. to Python (chpts. 2-3)</td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 09-24</td>
-      <td>Pandas for data manipulation 1 + static data visualization</td>
+      <td>Tuesday 04-08</td>
+      <td>Python basics (variables, lists, arrays) & software setup</td>
       <td>Data Manipulation with pandas (course)</td>
-      <td>Problem set one (submit as group; due Monday 09-30)</td>
+      <td>Problem set one (submit as group; due Monday 04-18)</td>
     </tr>
     <tr>
-      <td>Thursday 09-26</td>
-      <td>Pandas 2</td>
+      <td>Thursday 04-10</td>
+      <td>Pandas for data manipulation 1 + static data visualization</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 10-01</td>
+      <td>Tuesday 04-15</td>
+      <td>Pandas 2 (X-hour)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 04-17</td>
       <td>User-defined functions</td>
       <td>Writing your own functions (chpt.)</td>
-      <td></td>
+      <td>Final Project Form (due Thursday 04-28)</td>
     </tr>
     <tr>
-      <td>Thursday 10-03</td>
+      <td>Tuesday 04-22</td>
       <td>Workflow basics: command line & Github</td>
       <td>Intro. to Shell, Intro. to GitHub (chpts.)</td>
-      <td>Final Project Form (due Thursday 10-10)</td>
+      <td>Problem set two (due Monday 04-28)</td>
     </tr>
     <tr>
-      <td>Tuesday 10-08</td>
+      <td>Thursday 04-24</td>
       <td>Merging data</td>
       <td>Joining Data with pandas (chpts. 1-2)</td>
-      <td>Problem set two (due Monday 10-14)</td>
-    </tr>
-    <tr>
-      <td>Thursday 10-10</td>
-      <td>No Class (@Conference)</td>
-      <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 10-15</td>
+      <td>Tuesday 04-29</td>
       <td>Regular expressions (Regex)</td>
-      <td>Regular Expressions for Pattern Matching (chpt.)</td>
-      <td>Final project milestone 1 (due Thursday 10-31)</td>
+      <td></td>
+      <td>Final project milestone 1 (due Wednesday 05-14)</td>
     </tr>
     <tr>
-      <td>Thursday 10-17</td>
+      <td>Thursday 05-01</td>
       <td>Text-as-data 1 (text mining)</td>
-      <td>Text preprocessing, POS tagging and NER (chpt.)</td>
+      <td>Regular Expressions for Pattern Matching (chpt.)</td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 10-22</td>
+      <td>Tuesday 05-06</td>
       <td>Text-as-data 2 (topic modeling)</td>
-      <td></td>
-      <td>Problem set three (due Monday 10-28)</td>
+      <td>Text preprocessing, POS tagging and NER (chpt.)</td>
+      <td>Problem set three (due Wednesday 05-14)</td>
     </tr>
     <tr>
-      <td>Thursday 10-24</td>
+      <td>Thursday 05-08</td>
       <td>APIs</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 10-29</td>
+      <td>Tuesday 05-13</td>
       <td>Social Network Visualization</td>
       <td></td>
-      <td>Final project milestone 2 (due Thursday 11-07)</td>
+      <td>Final project milestone 2 (due Thursday 05-26)</td>
     </tr>
     <tr>
-      <td>Thursday 10-31</td>
-      <td>Homecoming Weekend</td>
+      <td>Thursday 05-15</td>
+      <td>Green Key Weekend (let's be real)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 11-05</td>
+      <td>Tuesday 05-20</td>
       <td>Supervised machine learning 1</td>
       <td>Supervised Learning with scikit-learn (course)</td>
-      <td>Problem set four (due Friday 11-11)</td>
+      <td>Problem set four (due Friday 05-26)</td>
     </tr>
     <tr>
-      <td>Thursday 11-07</td>
+      <td>Thursday 05-22</td>
       <td>Supervised machine learning 2</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 11-12</td>
+      <td>Tuesday 05-27</td>
       <td>SQL</td>
       <td>Intro. to SQL (chpts. 1-2)</td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 11-14</td>
+      <td>Thursday 05-29</td>
       <td>Common Distribs; Project work session</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 11-19</td>
+      <td>Tuesday 06-03</td>
       <td>Final presentations</td>
       <td></td>
-      <td>Final project presentation (paper due Tuesday 11-26)</td>
+      <td>Final project presentation (paper due Tuesday 06-09)</td>
     </tr>
   </tbody>
 </table></div></div>
