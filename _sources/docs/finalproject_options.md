@@ -23,21 +23,12 @@ The COVID-19 pandeimic impacted every country globally, with stay-at-home orders
 
 **This option requires working in a group.**
 
-## 2. Deeper dive into felony sentencing data used in problem sets 1 and 2
+## 2. Use Senior Thesis/independent project
 
-In the first two problem sets, you used and got familiar with the Cook County State Attorney’s Office Felony Sentencing Data to investigate racial disparities in sentence length and within-judge disparities. With this project option, you’d do a deeper dive into the felony sentencing data to address another question, such as:
-1. more rigorous analyses of disparities using causal inference techniques
-2. analyses of other fields in the data (e.g., neighborhood disparities; how judge demographics relate to sentencing behavior)
-
-**This option requires working in a group.**
-
-
-## 3. Use Senior Thesis/independent project 
-
-If you're already pursuing a significant research project, you may use this course to advance an existing work in progress, covering parts and analysis you might not include otherwise. 
+If you're already pursuing a significant research project, you may use this course to advance an existing work in progress, covering parts and analysis you might not include otherwise.
 
 The project needs to align with the evaluation criteria — e.g., it must result in data you can share with us, a repo you can share, and a 10-page CS-style report.
 
 Please choose this option with caution as you will be held to same grading standard as groups of 3-4. Moreover, unless you have already made substantial progress on an independent project, you probably won't be able to finish it in one short quarter.
 
-**You can complete this option either individually or in a group** (i.e., by focusing on one person’s project and getting group help).
+**You can complete this option either individually or in a group** (i.e., by focusing on one person's project and getting group help).

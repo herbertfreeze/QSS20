@@ -4,9 +4,6 @@ QSS 20 is a foundational and required course in the Quantitative Social Science 
 
 Our topics will include data wrangling and visualization, including merging datasets and SQL for database manipulation; data extraction via APIs and web-scraping; processing and analyzing text as data; and supervised machine learning. Students will also be exposed to [Git/GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) for version control and reproducibility, the command line for scalable computing, and [LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) for smart typesetting and collaborative workflows. In addition to introductory coding modules via DataCamp, in-class activities, and problem sets, the course will culminate in a group-based, applied data science project using a real-world dataset with social impact.
 
-The course will be taught be Prof. Herbert Chang.
-<!-- , and TAs Ming Zha '27 and Tracy Weener '26. -->
-
 
 ## Prerequisites 
 
@@ -15,7 +12,7 @@ The course will move fast, cover a lot of material, and require active engagemen
 
 ## Goals
 
-The goal of this course is for students to become better data scientists. Students will be able to do the following in Python:
+The goal of this course is for students to become the best data scientists at working with social data. Students will be able to do the following in Python:
 
 * Work with and visualize various data structures, in particular DataFrames
 * Write effective and well-documented user-defined functions
@@ -28,13 +25,13 @@ The goal of this course is for students to become better data scientists. Studen
 
 ### By day of the week
 
-* Monday: 9-10 AM (Prof. C OH)
-<!-- * Tuesday: 4:30 - 5:30 PM (Emma OH) -->
-<!-- * Wednesday: 9-10 AM (Prof. C OH) -->
-<!-- * Thursday: Peer tutoring TBD -->
-<!-- * Friday: 1:30 -2:30 PM (Sabin OH) -->
+* Monday: 9-10 AM (Prof. OH), 7-8 PM (peer tutoring)
+* Tuesday: 1-2 PM (Eunice OH)
+* Wednesday: 9-10 AM (Prof. OH)
+* Thursday: 9-10 PM (peer tutoring)
+* Friday: 2-3 PM (Ramsey OH)
 * Saturday: none
-<!-- * Sunday: Peer tutoring TBD -->
+* Sunday: 2-3 PM (Ramsey OH), 8-9 PM (peer tutoring)
 
 
 ### Links & locations
@@ -42,16 +39,16 @@ The goal of this course is for students to become better data scientists. Studen
 * Prof. OH: 9-10 AM Monday/Wednesday at **124 Silsby**; if you'd like to meet about research outside the course, send me times that work for you and we can schedule something.
 * Group tutoring TBD
 <!-- with Eleanor Sullivan: [sign up here](https://grouptutoring.dartmouth.edu/terms/23W/groups/12210); 7-8 PM Monday in Reed 101, 9-10 PM Thursday in Baker 370, 8-9 PM Sunday in Dart 002; [Zoom as an alternate](https://dartmouth.zoom.us/j/96707419408?pwd=SzJPYVQ1M0RRZmUzWWpJMzFZWXdHdz09). Tutoring begins in the second week of the quarter. -->
-<!-- * Ming OH: 4:30  - 5:30 PM Tuesday (Kemeny 105)
-* Tracy OH: 1:30 - 2:30 PM Friday (Haldeman 46) -->
+* Eunice OH: 1-2 PM Tuesday [on Zoom](https://dartmouth.zoom.us/j/3848466647)
+* Ramsey OH: 2-3 PM Friday/Sunday in Haldeman 046, [Zoom as an alternate](https://dartmouth.zoom.us/j/6368699727)
 
 
 ## DataCamp as learning resource
 
-**This class has no textbook.** Instead, we will use DataCamp to introduce you to course concepts, and you're encouraged to use other online resources like [StackOverflow](https://stackoverflow.com/) to fill in the gaps. DataCamp modules feature short introductory videos to a concept (e.g., loops), which you can click through if you're already familiar with the concept. Next is a series of tasks where you will write code, submit to test whether your code does what it's supposed to, and then progress to the next task. You can access these modules on the course page within DataCamp.
+**This class has no textbook.** Instead, we will use DataCamp to introduce you to course concepts, and you're encouraged to use other online resources like [StackOverflow](https://stackoverflow.com/) to fill in the gaps. DataCamp modules feature short introductory videos to a concept (e.g., loops), which you can click through if you're already familiar with the concept. Next is a series of tasks where you will write code, submit to test whether your code does what it's supposed to, and then progress to the next task. You can access these modules on the course page within DataCamp, which you'll sign up for using your Dartmouth email. [You can join that here.](https://www.datacamp.com/groups/shared_links/434e7826f38af70536acc1d3bf83fe921babc9c35b966195cf577468505c0473) 
 
 **I suggest completing the assigned modules *before* the corresponding class,** so you can get more from the in-class activities.
 
-DataCamp plays a supporting and minor role in the course, helping prepare you with the basic syntax for in-class activities. Accordingly, DataCamp modules are graded on a completion-only basis and are worth only 5% of your grade. You will receive full credit for DataCamp modules so long as you complete them by June 3 (when your final papers are due). 
+DataCamp plays a supporting and minor role in the course, helping prepare you with the basic syntax for in-class activities. Accordingly, DataCamp modules are graded on a completion-only basis and are worth only 5% of your grade. You will receive full credit for DataCamp modules so long as you complete them by March 14 (when your final papers are due). Even so, if you’d prefer to skip the DataCamp modules, you can talk to the Prof. to get the 5% reapportioned to your problem sets.
 
 <!-- **Any DataCamp modules listed as being due March 30 are not required.** These are optional extra practice with the course tools and concepts to support your learning—especially those of you new to Python. You will have access to these modules (for free) until March 30, after which point only DataCamp subscribers can access them.  -->
