@@ -13,7 +13,20 @@ kernelspec:
 
 # Project Components
 
-*Coming soon.*
+## Milestone 1
+
+**Due Friday 05-15, 11:59 PM EST.** Submit individually on Canvas.
+
+Before starting milestone 1:
+
+- Set up a free Overleaf account with your Dartmouth email and copy the [Milestone 1 template](https://www.overleaf.com/project/651a342638a4ad7a16a5bb9b) into your own account. **Only edit your local copy** (please don't change the template!)
+- Read the report for [one Fall 2022 example project on your option](https://github.com/herbertfreeze/QSS20-S26/tree/main/finalproj_guidelines) and get a sense for its strengths and weaknesses.
+
+Then fill in the template's sections.
+
+Please submit your milestone 1 memo on Canvas. These will be graded.
+
+---
 
 <!--
 Please check the Course Schedule for the due date for each of these final project components:
@@ -22,19 +35,18 @@ Please check the Course Schedule for the due date for each of these final projec
 ## Milestone one
 
 Before starting milestone one:
-- Fill out the final project group form
 - Read the report for one Spring 2021 project and get a sense for its strengths and weaknesses. What can you learn from their report? What can you improve on?
 - Copy to your own Overleaf account the milestone 1 template and **only edit your local copy** (please don't change the template!)
   - You need to first setup an Overleaf account with your Dartmouth email (free) and log in
 
 Then fill in the template sections by exploring your data on possible questions, relevant data fields, and possible changes.
 
-Please submit one milestone one memo per group on Canvas. These will be graded.
+Please submit your milestone one memo on Canvas. These will be graded.
 
 
 ## Milestone two
 
-Create a private GitHub repository for your team that contains:
+Create a private GitHub repository for your project that contains:
 - An informative README
 - A `code/` directory for scripts
 - An `output/` directory for graphs/figures
