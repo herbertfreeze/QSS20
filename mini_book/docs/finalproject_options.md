@@ -23,15 +23,10 @@ The COVID-19 pandeimic impacted every country globally, with stay-at-home orders
 Second, in recent years, text-based social media has given way to visual-based social media, and is now often the source of political organization and protest. The 2024 United States Presidential Election is a hotbed to test social scientific ideas, and as part of our efforts we have gathered 500,000 Instagram posts and 750,000 TikTok posts for analysis. This provides the opportunity to do timely analysis on the ongoing elections.
 
 
-**This option requires working in a group.**
-
-
 ## 2. Use Senior Thesis/independent project
 
 If you're already pursuing a significant research project, you may use this course to advance an existing work in progress, covering parts and analysis you might not include otherwise. This is intended to build toward your thesis. If you are already enrolled in a thesis course, I will need to coordinate with your other professor. If in doubt, please ping me on Slack or email.
 
 The project needs to align with the evaluation criteria — e.g., it must result in data you can share with us, a repo you can share, and a 10-page CS-style report.
 
-Please choose this option with caution as you will be held to same grading standard as groups of 3-4. Moreover, unless you have already made substantial progress on an independent project, you probably won't be able to finish it in one short quarter.
-
-**You can complete this option either individually or in a group** (i.e., by focusing on one person's project and getting group help).
+Please choose this option with caution. Unless you have already made substantial progress on an independent project, you probably won't be able to finish it in one short quarter.
