@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>QSS 20. Modern Statistical Computing &#8212; QSS 20. Modern Statistical Computing</title>
   
@@ -15,57 +14,59 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Course Schedule" href="course_schedule.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -73,23 +74,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -97,7 +91,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -105,16 +98,27 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -127,9 +131,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="#">
+  
   
   
   
@@ -139,12 +147,19 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/laptop.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/laptop.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/laptop.png" class="logo__image only-light" alt="QSS 20. Modern Statistical Computing - Home"/>
+    <img src="../_static/laptop.png" class="logo__image only-dark pst-js-only" alt="QSS 20. Modern Statistical Computing - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Overview</span></p>
 <ul class="nav bd-sidenav">
@@ -170,14 +185,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -186,14 +206,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -255,7 +275,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -268,26 +288,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -315,7 +329,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#links-locations">Links &amp; locations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datacamp-as-learning-resource">DataCamp as learning resource</a></li>
 </ul>
             </nav>
         </div>
@@ -325,18 +338,18 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="qss-20-modern-statistical-computing">
-<h1>QSS 20. Modern Statistical Computing<a class="headerlink" href="#qss-20-modern-statistical-computing" title="Permalink to this headline">#</a></h1>
+<h1>QSS 20. Modern Statistical Computing<a class="headerlink" href="#qss-20-modern-statistical-computing" title="Link to this heading">#</a></h1>
 <p>QSS 20 is a foundational and required course in the Quantitative Social Science curriculum that equips students with the computing literacy to conduct social science research in the age of “big data.” The skills students learn in QSS 20 are building blocks for data science applications from research to industry to nonprofits and government. This course builds on students’ introductory programming course and teaches you how to draw meaningful insights from real-world, often messy datasets, so you can help incorporate data into decision-making and analysis. The course will teach students to quickly pick up new methods and find patterns in large-scale data—essential skills given that methods and tools for modern statistical computing develop at a rapid pace, and in real-world data science you sometimes don’t know what tools you need to know until you need to know them.</p>
-<p>Our topics will include data wrangling and visualization, including merging datasets and SQL for database manipulation; data extraction via APIs and web-scraping; processing and analyzing text as data; and supervised machine learning. Students will also be exposed to <a class="reference external" href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">Git/GitHub</a> for version control and reproducibility, the command line for scalable computing, and <a class="reference external" href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">LaTeX</a> for smart typesetting and collaborative workflows. In addition to introductory coding modules via DataCamp, in-class activities, and problem sets, the course will culminate in a group-based, applied data science project using a real-world dataset with social impact.</p>
+<p>Our topics will include data wrangling and visualization, including merging datasets and SQL for database manipulation; data extraction via APIs and web-scraping; processing and analyzing text as data; and supervised machine learning. Students will also be exposed to <a class="reference external" href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">Git/GitHub</a> for version control and reproducibility, the command line for scalable computing, and <a class="reference external" href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">LaTeX</a> for smart typesetting and collaborative workflows. The course will culminate in an individual applied data science project using a real-world dataset with social impact.</p>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <p>The course will move fast, cover a lot of material, and require active engagement with applied projects. To ensure your success, students must have taken or received AP credit for COSC 1, ENGS 20, or equivalent (with QSS chair’s permission) in order to enroll. An introductory statistics course is also recommended.</p>
 </section>
 <section id="goals">
-<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">#</a></h2>
+<h2>Goals<a class="headerlink" href="#goals" title="Link to this heading">#</a></h2>
 <p>The goal of this course is for students to become the best data scientists at working with social data. Students will be able to do the following in Python:</p>
 <ul class="simple">
 <li><p>Work with and visualize various data structures, in particular DataFrames</p></li>
@@ -347,38 +360,22 @@ document.write(`
 </ul>
 </section>
 <section id="office-hours">
-<h2>Office hours<a class="headerlink" href="#office-hours" title="Permalink to this headline">#</a></h2>
+<h2>Office hours<a class="headerlink" href="#office-hours" title="Link to this heading">#</a></h2>
 <section id="by-day-of-the-week">
-<h3>By day of the week<a class="headerlink" href="#by-day-of-the-week" title="Permalink to this headline">#</a></h3>
+<h3>By day of the week<a class="headerlink" href="#by-day-of-the-week" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Monday: 9-10 AM (Prof. OH), 7-8 PM (peer tutoring)</p></li>
-<li><p>Tuesday: 1-2 PM (Eunice OH)</p></li>
+<li><p>Monday: 9-10 AM (Prof. OH)</p></li>
 <li><p>Wednesday: 9-10 AM (Prof. OH)</p></li>
-<li><p>Thursday: 9-10 PM (peer tutoring)</p></li>
-<li><p>Friday: 2-3 PM (Ramsey OH)</p></li>
-<li><p>Saturday: none</p></li>
-<li><p>Sunday: 2-3 PM (Ramsey OH), 8-9 PM (peer tutoring)</p></li>
+<li><p>Thursday: 4-5 PM (Tracy OH)</p></li>
 </ul>
 </section>
 <section id="links-locations">
-<h3>Links &amp; locations<a class="headerlink" href="#links-locations" title="Permalink to this headline">#</a></h3>
+<h3>Links &amp; locations<a class="headerlink" href="#links-locations" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Prof. OH: 9-10 AM Monday/Wednesday at <strong>124 Silsby</strong>; if you’d like to meet about research outside the course, send me times that work for you and we can schedule something.</p></li>
-<li><p>Group tutoring TBD</p></li>
-</ul>
-<!-- with Eleanor Sullivan: [sign up here](https://grouptutoring.dartmouth.edu/terms/23W/groups/12210); 7-8 PM Monday in Reed 101, 9-10 PM Thursday in Baker 370, 8-9 PM Sunday in Dart 002; [Zoom as an alternate](https://dartmouth.zoom.us/j/96707419408?pwd=SzJPYVQ1M0RRZmUzWWpJMzFZWXdHdz09). Tutoring begins in the second week of the quarter. -->
-<ul class="simple">
-<li><p>Eunice OH: 1-2 PM Tuesday <a class="reference external" href="https://dartmouth.zoom.us/j/3848466647">on Zoom</a></p></li>
-<li><p>Ramsey OH: 2-3 PM Friday/Sunday in Haldeman 046, <a class="reference external" href="https://dartmouth.zoom.us/j/6368699727">Zoom as an alternate</a></p></li>
+<li><p>Tracy OH: 4-5 PM Thursday</p></li>
 </ul>
 </section>
-</section>
-<section id="datacamp-as-learning-resource">
-<h2>DataCamp as learning resource<a class="headerlink" href="#datacamp-as-learning-resource" title="Permalink to this headline">#</a></h2>
-<p><strong>This class has no textbook.</strong> Instead, we will use DataCamp to introduce you to course concepts, and you’re encouraged to use other online resources like <a class="reference external" href="https://stackoverflow.com/">StackOverflow</a> to fill in the gaps. DataCamp modules feature short introductory videos to a concept (e.g., loops), which you can click through if you’re already familiar with the concept. Next is a series of tasks where you will write code, submit to test whether your code does what it’s supposed to, and then progress to the next task. You can access these modules on the course page within DataCamp, which you’ll sign up for using your Dartmouth email. <a class="reference external" href="https://www.datacamp.com/groups/shared_links/434e7826f38af70536acc1d3bf83fe921babc9c35b966195cf577468505c0473">You can join that here.</a></p>
-<p><strong>I suggest completing the assigned modules <em>before</em> the corresponding class,</strong> so you can get more from the in-class activities.</p>
-<p>DataCamp plays a supporting and minor role in the course, helping prepare you with the basic syntax for in-class activities. Accordingly, DataCamp modules are graded on a completion-only basis and are worth only 5% of your grade. You will receive full credit for DataCamp modules so long as you complete them by March 14 (when your final papers are due). Even so, if you’d prefer to skip the DataCamp modules, you can talk to the Prof. to get the 5% reapportioned to your problem sets.</p>
-<!-- **Any DataCamp modules listed as being due March 30 are not required.** These are optional extra practice with the course tools and concepts to support your learning—especially those of you new to Python. You will have access to these modules (for free) until March 30, after which point only DataCamp subscribers can access them.  -->
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -413,11 +410,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
        href="course_schedule.html"
@@ -428,23 +424,23 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
@@ -453,7 +449,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#links-locations">Links &amp; locations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datacamp-as-learning-resource">DataCamp as learning resource</a></li>
 </ul>
   </nav></div>
 
@@ -475,9 +470,10 @@ By Herbert Chang
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -501,8 +497,8 @@ By Herbert Chang
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
