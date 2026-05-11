@@ -25,12 +25,11 @@ The goal of this course is for students to become the best data scientists at wo
 
 ### By day of the week
 
-* Monday: 9-10 AM (Prof. OH)
 * Wednesday: 9-10 AM (Prof. OH)
 * Thursday: 4-5 PM (Tracy OH)
 
 
 ### Links & locations
 
-* Prof. OH: 9-10 AM Monday/Wednesday at **124 Silsby**; if you'd like to meet about research outside the course, send me times that work for you and we can schedule something.
+* Prof. OH: 9-10 AM Wednesday at **124 Silsby**; if you'd like to meet about research outside the course, send me times that work for you and we can schedule something.
 * Tracy OH: 4-5 PM Thursday
