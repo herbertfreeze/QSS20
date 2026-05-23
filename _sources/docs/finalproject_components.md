@@ -28,6 +28,21 @@ Please submit your milestone 1 memo on Canvas. These will be graded.
 
 ---
 
+## Milestone 2
+
+**Due Tuesday 05-26, 11:59 PM EST.** Submit individually on Canvas as a link to your repo.
+
+By Milestone 2 you should have a **public GitHub repository** for your project containing:
+
+- An informative README that summarizes the project and points to each script.
+- A `code/` directory with at least 2–3 working scripts or notebooks (data pull / clean / analyze).
+- An `output/` directory with at least one figure or table you've generated.
+- A link to where the data lives (in the repo, or in a cloud folder if too large).
+
+You don't need to be close to finished — we just need to see that you've loaded the data, structured your code, and made some real analytical progress. Submit the link to your public repo on Canvas.
+
+---
+
 <!--
 Please check the Course Schedule for the due date for each of these final project components:
 
