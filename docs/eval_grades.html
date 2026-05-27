@@ -325,8 +325,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details">Details</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quizzes-10-of-grade">Quizzes (10% of grade)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-1-take-home-5-of-grade">Exam 1 — Take-home (5% of grade)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-2-agentic-take-home-10-of-grade">Exam 2 — Agentic, take-home (10% of grade)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project-75-of-grade-split-across-milestones">Final project (75% of grade, split across milestones)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project-85-of-grade-split-across-milestones">Final project (85% of grade, split across milestones)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-on-collaboration">A note on collaboration</a></li>
 </ul>
 </li>
@@ -345,9 +344,9 @@
 <h1>Evaluation and Grading<a class="headerlink" href="#evaluation-and-grading" title="Link to this heading">#</a></h1>
 <section id="summary-and-grading-policy">
 <h2>Summary and grading policy<a class="headerlink" href="#summary-and-grading-policy" title="Link to this heading">#</a></h2>
-<p>Your grade in QSS 20 is built from three things: low-stakes weekly <strong>quizzes</strong>, two short <strong>take-home exams</strong>, and a multi-stage <strong>final project</strong> that you build up across the term (Me Search → NotebookLM literature review → initial data analysis → Milestone 2 → final deliverables). There are no traditional weekly problem sets — the project milestones are where you practice the skills from class on data you actually care about.</p>
-<p>The final project is <strong>individual</strong> end-to-end (no team merge step).</p>
-<p><strong>Late policy.</strong> Project milestones may be submitted up to 48 hours late with a 10 percentage point per day deduction. Quizzes and exams cannot be made up except in documented emergencies; your lowest quiz is dropped automatically.</p>
+<p>Your grade in QSS 20 is built from three things: low-stakes weekly <strong>quizzes</strong>, a short <strong>take-home exam</strong> early in the term, and a multi-stage <strong>final project</strong> that you build up across the term (Me Search → NotebookLM literature review → initial data analysis → Milestone 2 → final deliverables). There are no traditional weekly problem sets — the project milestones are where you practice the skills from class on data you actually care about.</p>
+<p>The final project is <strong>individual</strong> end-to-end (no team merge step). You are expected to use AI coding assistants for both analysis and website generation, and to document that workflow in your final paper.</p>
+<p><strong>Late policy.</strong> Project milestones may be submitted up to 48 hours late with a 10 percentage point per day deduction. Quizzes and the exam cannot be made up except in documented emergencies; your lowest quiz is dropped automatically. <strong>Websites pushed after the final deadline receive a 0 for the website component.</strong></p>
 <p>Grades may be curved if no students receive A’s without a curve.</p>
 <div class="cell tag_hide_input tag_{toggle} docutils container">
 <div class="cell_input docutils container">
@@ -358,22 +357,20 @@
 
 <span class="n">grade_summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Assignments&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="s2">&quot;Quizzes (5, drop lowest)&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Exam 1&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Exam 2 (Agentic)&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Exam 1 (take-home)&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Me Search&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;NotebookLM lit review&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Initial data analysis (Milestone 1)&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Milestone 2 (repo + analytical progress)&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Final deliverables (presentation + paper + repo + website)&quot;</span><span class="p">],</span>
+                  <span class="s2">&quot;Milestone 2 (repo setup)&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Final deliverables (paper + repo + website + lightning talk)&quot;</span><span class="p">],</span>
                 <span class="s1">&#39;Percentage&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="mi">10</span><span class="p">,</span> 
                  <span class="mi">5</span><span class="p">,</span>
                  <span class="mi">10</span><span class="p">,</span>
                  <span class="mi">10</span><span class="p">,</span>
-                 <span class="mi">10</span><span class="p">,</span>
                  <span class="mi">15</span><span class="p">,</span>
                  <span class="mi">5</span><span class="p">,</span>
-                 <span class="mi">35</span><span class="p">],</span>
+                 <span class="mi">45</span><span class="p">],</span>
                              <span class="p">})</span> 
 
 <span class="n">HTML</span><span class="p">(</span><span class="n">grade_summary</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -394,12 +391,8 @@
       <td>10</td>
     </tr>
     <tr>
-      <td>Exam 1</td>
+      <td>Exam 1 (take-home)</td>
       <td>5</td>
-    </tr>
-    <tr>
-      <td>Exam 2 (Agentic)</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Me Search</td>
@@ -414,12 +407,12 @@
       <td>15</td>
     </tr>
     <tr>
-      <td>Milestone 2 (repo + analytical progress)</td>
+      <td>Milestone 2 (repo setup)</td>
       <td>5</td>
     </tr>
     <tr>
-      <td>Final deliverables (presentation + paper + repo + website)</td>
-      <td>35</td>
+      <td>Final deliverables (paper + repo + website + lightning talk)</td>
+      <td>45</td>
     </tr>
   </tbody>
 </table></div></div>
@@ -435,20 +428,17 @@
 <h3>Exam 1 — Take-home (5% of grade)<a class="headerlink" href="#exam-1-take-home-5-of-grade" title="Link to this heading">#</a></h3>
 <p>A short take-home exam covering the first unit of the course (data wrangling, cleaning, and descriptive analysis in pandas). You will receive a Jupyter notebook plus a one-page written component, and turn in both an <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> and a compiled PDF.</p>
 </section>
-<section id="exam-2-agentic-take-home-10-of-grade">
-<h3>Exam 2 — Agentic, take-home (10% of grade)<a class="headerlink" href="#exam-2-agentic-take-home-10-of-grade" title="Link to this heading">#</a></h3>
-<p>A take-home exam focused on the second half of the course, where the emphasis is on using AI coding assistants effectively and responsibly. You will complete a data task and then reflect on your workflow with the assistant — what you asked, what you accepted, what you rejected, and why. Graded on both the final artifact and the quality of your reflection.</p>
-</section>
-<section id="final-project-75-of-grade-split-across-milestones">
-<h3>Final project (75% of grade, split across milestones)<a class="headerlink" href="#final-project-75-of-grade-split-across-milestones" title="Link to this heading">#</a></h3>
-<p>The final project is <strong>individual</strong> and is built up across the term in stages so that you get feedback at each step rather than only at the end. The five milestones are:</p>
+<section id="final-project-85-of-grade-split-across-milestones">
+<h3>Final project (85% of grade, split across milestones)<a class="headerlink" href="#final-project-85-of-grade-split-across-milestones" title="Link to this heading">#</a></h3>
+<p>The final project is <strong>individual</strong> and is built up across the term in stages so that you get feedback at each step rather than only at the end:</p>
 <ul class="simple">
 <li><p><strong>Me Search (10%)</strong> — A short proposal where you identify a question that you personally care about and locate a dataset that could plausibly address it. Graded on fit between question, data, and feasibility.</p></li>
 <li><p><strong>NotebookLM literature review (10%)</strong> — A structured literature review using NotebookLM to synthesize prior work on your topic. You will turn in the source set, the synthesized summary, and a short reflection on what NotebookLM got right and wrong.</p></li>
 <li><p><strong>Initial data analysis — Milestone 1 (15%)</strong> — Your first end-to-end pass at the data: loading, cleaning, descriptive statistics, and at least one visualization that speaks to your question.</p></li>
-<li><p><strong>Milestone 2 (5%)</strong> — Public GitHub repo with README, organized <code class="docutils literal notranslate"><span class="pre">code/</span></code> and <code class="docutils literal notranslate"><span class="pre">output/</span></code> directories, and real analytical progress. We use this as a checkpoint to flag direction issues before the final stretch.</p></li>
-<li><p><strong>Final deliverables (35%)</strong> — A ~2-minute in-class presentation, a 6-page scientific report, a complete public GitHub repository, and a website that demos the project. See the “Project Components” page for the detailed breakdown.</p></li>
+<li><p><strong>Milestone 2 (5%)</strong> — Public GitHub repo set up with README, organized <code class="docutils literal notranslate"><span class="pre">code/</span></code> and <code class="docutils literal notranslate"><span class="pre">output/</span></code> directories. Lightweight checkpoint to flag direction issues before the final stretch.</p></li>
+<li><p><strong>Final deliverables (45%)</strong> — A 6-page paper (with a required Agentic Analysis section: AI transcripts + coding-session reflection), a complete public GitHub repository, a public website that demos the project, and a 90–120 second in-class lightning talk + 30 second Q&amp;A. See the “Project Components” page for the detailed breakdown.</p></li>
 </ul>
+<p>You are expected to use AI coding assistants for both analysis and website generation. The agentic workflow is part of what we’re evaluating — document it in the paper’s Agentic Analysis section.</p>
 </section>
 <section id="a-note-on-collaboration">
 <h3>A note on collaboration<a class="headerlink" href="#a-note-on-collaboration" title="Link to this heading">#</a></h3>
@@ -527,8 +517,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details">Details</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quizzes-10-of-grade">Quizzes (10% of grade)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-1-take-home-5-of-grade">Exam 1 — Take-home (5% of grade)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-2-agentic-take-home-10-of-grade">Exam 2 — Agentic, take-home (10% of grade)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project-75-of-grade-split-across-milestones">Final project (75% of grade, split across milestones)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project-85-of-grade-split-across-milestones">Final project (85% of grade, split across milestones)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-on-collaboration">A note on collaboration</a></li>
 </ul>
 </li>
