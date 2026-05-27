@@ -39,7 +39,56 @@ By Milestone 2 you should have a **public GitHub repository** for your project c
 - An `output/` directory with at least one figure or table you've generated.
 - A link to where the data lives (in the repo, or in a cloud folder if too large).
 
-You don't need to be close to finished — we just need to see that you've loaded the data, structured your code, and made some real analytical progress. Submit the link to your public repo on Canvas.
+Milestone 2 is just about getting the repo set up — you don't need to be close to finished. Submit the link to your public repo on Canvas.
+
+---
+
+## Final Deliverables
+
+**Final presentations: Tuesday 06-02, in class (last day of class).**
+**Paper + repo + website due: Sunday 06-07, 11:59 PM EST.**
+
+Final deliverables are worth **45% of your grade** and consist of four pieces:
+
+### 1. Paper (6 pages)
+
+A short scientific writeup. Graded with the [project rubric](https://github.com/herbertfreeze/QSS20-S26/blob/main/finalproj_guidelines/final_project_rubric.csv) — same elements as before (intro/related work, data, methods, results writing, results figures/tables, discussion, code/repo), plus a new element:
+
+- **Agentic Analysis** — A short section (or appendix) that includes your AI transcripts and a critical reflection on your coding session: what you asked the assistant, what you accepted, what you rejected, and where the assistant went wrong.
+
+You are expected to use AI coding assistants for analysis *and* for website generation — the agentic workflow is part of what we're evaluating.
+
+### 2. GitHub repo (public)
+
+- Numbered notebooks that run in order (`00_pull.ipynb`, `01_merge.ipynb`, `02_analyze.ipynb`, …).
+- README links each notebook with its inputs, what it does, and its outputs.
+- Directories: `code/`, `data/` (or a cloud-storage link), `output/`.
+- No spaces in filenames; no hardcoded paths.
+- Define functions at the top of each notebook.
+- Print diagnostics before/after merges.
+
+### 3. Website (public demo)
+
+A public-facing site that demos the entire project. It should tell the story end-to-end: **question → data → method → result → takeaway.** Embed your key figures so a visitor can grasp the project in 2–3 minutes.
+
+- Must be **live and linkable** by the Sunday 06-07 deadline.
+- **Pushes after the deadline receive a 0** for the website component.
+- Hosting is your choice (GitHub Pages with Jupyter Book or Quarto, Streamlit, static HTML, etc.).
+
+### 4. Lightning Talk
+
+In-class on **Tuesday 06-02**:
+
+- **90–120 seconds, hard stop.**
+- Plus one instructor question + 30 seconds to respond.
+- Recommended: **≤ 3 slides**, or present live from your website.
+- Goal: lead with your headline finding and defend it.
+
+---
+
+## Next week — optional consultations
+
+I'll release 10-minute consultation slots for the week of 05-26. These are **optional** but encouraged if you want to sanity-check your direction before the final stretch.
 
 ---
 
