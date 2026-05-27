@@ -19,7 +19,7 @@ kernelspec:
 
 Before starting milestone 1:
 
-- Set up a free Overleaf account with your Dartmouth email and copy the [Milestone 1 template](https://www.overleaf.com/project/651a342638a4ad7a16a5bb9b) into your own account. **Only edit your local copy** (please don't change the template!)
+- Set up a free Overleaf account with your Dartmouth email and copy the [Milestone 1 template](https://www.overleaf.com/project/651a342638a4ad7a16a5bb9b) into your own account. **Only edit your local copy** (please do not change the template!)
 - Read the report for [one Fall 2022 example project on your option](https://github.com/herbertfreeze/QSS20-S26/tree/main/finalproj_guidelines) and get a sense for its strengths and weaknesses.
 
 Then fill in the template's sections.
@@ -34,12 +34,12 @@ Please submit your milestone 1 memo on Canvas. These will be graded.
 
 By Milestone 2 you should have a **public GitHub repository** for your project containing:
 
-- An informative README that summarizes the project and points to each script.
-- A `code/` directory with at least 2–3 working scripts or notebooks (data pull / clean / analyze).
-- An `output/` directory with at least one figure or table you've generated.
+- An informative README that summarizes the project and points to each notebook.
+- A `code/` directory with at least 2–3 working notebooks (data pull / clean / analyze).
+- An `output/` directory with at least one figure or table you have generated.
 - A link to where the data lives (in the repo, or in a cloud folder if too large).
 
-Milestone 2 is just about getting the repo set up — you don't need to be close to finished. Submit the link to your public repo on Canvas.
+Milestone 2 is just about getting the repo set up — you do not need to be close to finished. Submit the link to your public repo on Canvas.
 
 ---
 
@@ -56,7 +56,14 @@ A short scientific writeup. Graded with the [project rubric](https://github.com/
 
 - **Agentic Analysis** — A short section (or appendix) that includes your AI transcripts and a critical reflection on your coding session: what you asked the assistant, what you accepted, what you rejected, and where the assistant went wrong.
 
-You are expected to use AI coding assistants for analysis *and* for website generation — the agentic workflow is part of what we're evaluating.
+You are expected to use AI coding assistants for analysis *and* for website generation — the agentic workflow is part of what we are evaluating.
+
+**Format.** Write the paper in LaTeX using a PNAS-style single-column template:
+
+- Open the [PNAS Overleaf gallery](https://www.overleaf.com/gallery/tagged/pnas), select the *single-column mathematics article* template (second from left), and click **Open as Template** to copy it into your own Overleaf account.
+- For reference, see the [PNAS author guidelines](https://www.pnas.org/authors/submitting-your-manuscript).
+- Remove the DRAFT watermark by editing the `.cls` file and setting `display watermark` to `false`. A small deduction will apply if the watermark remains.
+- The page limit is **6 pages** (excluding references and the Agentic Analysis section).
 
 ### 2. GitHub repo (public)
 
@@ -73,7 +80,7 @@ A public-facing site that demos the entire project. It should tell the story end
 
 - Must be **live and linkable** by the Sunday 06-07 deadline.
 - **Pushes after the deadline receive a 0** for the website component.
-- Hosting is your choice (GitHub Pages with Jupyter Book or Quarto, Streamlit, static HTML, etc.).
+- **Suggested stack: React + Vercel** — a tutorial walking through this setup will be released; you are free to use a different stack if you prefer (e.g., GitHub Pages with Jupyter Book or Quarto, Streamlit, static HTML).
 
 ### 4. Lightning Talk
 
@@ -88,7 +95,7 @@ In-class on **Tuesday 06-02**:
 
 ## Next week — optional consultations
 
-I'll release 10-minute consultation slots for the week of 05-26. These are **optional** but encouraged if you want to sanity-check your direction before the final stretch.
+I will release 10-minute consultation slots for the week of 05-26. These are **optional** but encouraged if you want to sanity-check your direction before the final stretch.
 
 ---
 
