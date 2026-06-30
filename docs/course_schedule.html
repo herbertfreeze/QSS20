@@ -342,8 +342,8 @@
 <span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
 
 <span class="c1"># create range b/t start and end date of course</span>
-<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2026-03-30&quot;</span><span class="p">)</span>
-<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2026-06-03&quot;</span><span class="p">)</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2026-06-30&quot;</span><span class="p">)</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2026-08-26&quot;</span><span class="p">)</span>
 <span class="n">alldates</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
 
 <span class="c1"># subset to days in that range equal to Tuesday and Thursday</span>
@@ -362,25 +362,23 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 03-31
-1     Thursday 04-02
-2      Tuesday 04-07
-3     Thursday 04-09
-4      Tuesday 04-14
-5     Thursday 04-16
-6      Tuesday 04-21
-7     Thursday 04-23
-8      Tuesday 04-28
-9     Thursday 04-30
-10     Tuesday 05-05
-11    Thursday 05-07
-12     Tuesday 05-12
-13    Thursday 05-14
-14     Tuesday 05-19
-15    Thursday 05-21
-16     Tuesday 05-26
-17    Thursday 05-28
-18     Tuesday 06-02
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 06-30
+1     Thursday 07-02
+2      Tuesday 07-07
+3     Thursday 07-09
+4      Tuesday 07-14
+5     Thursday 07-16
+6      Tuesday 07-21
+7     Thursday 07-23
+8      Tuesday 07-28
+9     Thursday 07-30
+10     Tuesday 08-04
+11    Thursday 08-06
+12     Tuesday 08-11
+13    Thursday 08-13
+14     Tuesday 08-18
+15    Thursday 08-20
+16     Tuesday 08-25
 Name: day_date, dtype: object
 </pre></div>
 </div>
@@ -391,15 +389,15 @@ Name: day_date, dtype: object
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create basic schedule content</span>
 
-<span class="c1"># list of concepts</span>
+<span class="c1"># list of concepts (17 Tue/Thu sessions; Thu 07-09 is NO CLASS)</span>
 <span class="n">concepts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Course intro. &amp; syllabus review&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Pandas&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Pandas&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;NO CLASS&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Pandas&quot;</span><span class="p">,</span>
             <span class="s2">&quot;User-defined functions&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Workflow basics: command line &amp; Github&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Merging data&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Conference&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Regular expressions (Regex)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text-as-data 1 (text mining)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text-as-data 2 (topic modeling)&quot;</span><span class="p">,</span>
@@ -408,9 +406,7 @@ Name: day_date, dtype: object
             <span class="s2">&quot;Supervised machine learning 1&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Supervised machine learning 2&quot;</span><span class="p">,</span>
             <span class="s2">&quot;SQL&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Grouped Meetings&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Grouped Meetings&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Final presentations&quot;</span><span class="p">]</span>
+            <span class="s2">&quot;Final lightning talks&quot;</span><span class="p">]</span>
 
 <span class="c1"># check that concepts match number of weeks</span>
 <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">course_sched</span><span class="o">.</span><span class="n">day_date</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">concepts</span><span class="p">)</span>
@@ -427,25 +423,23 @@ Name: day_date, dtype: object
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              Date                                Concepts
-0    Tuesday 03-31         Course intro. &amp; syllabus review
-1   Thursday 04-02                                  Pandas
-2    Tuesday 04-07                                  Pandas
-3   Thursday 04-09                                  Pandas
-4    Tuesday 04-14                  User-defined functions
-5   Thursday 04-16  Workflow basics: command line &amp; Github
-6    Tuesday 04-21                            Merging data
-7   Thursday 04-23                              Conference
-8    Tuesday 04-28             Regular expressions (Regex)
-9   Thursday 04-30            Text-as-data 1 (text mining)
-10   Tuesday 05-05         Text-as-data 2 (topic modeling)
-11  Thursday 05-07                                    APIs
-12   Tuesday 05-12            Social Network Visualization
-13  Thursday 05-14           Supervised machine learning 1
-14   Tuesday 05-19           Supervised machine learning 2
-15  Thursday 05-21                                     SQL
-16   Tuesday 05-26                        Grouped Meetings
-17  Thursday 05-28                        Grouped Meetings
-18   Tuesday 06-02                     Final presentations
+0    Tuesday 06-30         Course intro. &amp; syllabus review
+1   Thursday 07-02                                  Pandas
+2    Tuesday 07-07                                  Pandas
+3   Thursday 07-09                                NO CLASS
+4    Tuesday 07-14                                  Pandas
+5   Thursday 07-16                  User-defined functions
+6    Tuesday 07-21  Workflow basics: command line &amp; Github
+7   Thursday 07-23                            Merging data
+8    Tuesday 07-28             Regular expressions (Regex)
+9   Thursday 07-30            Text-as-data 1 (text mining)
+10   Tuesday 08-04         Text-as-data 2 (topic modeling)
+11  Thursday 08-06                                    APIs
+12   Tuesday 08-11            Social Network Visualization
+13  Thursday 08-13           Supervised machine learning 1
+14   Tuesday 08-18           Supervised machine learning 2
+15  Thursday 08-20                                     SQL
+16   Tuesday 08-25                   Final lightning talks
 </pre></div>
 </div>
 </div>
@@ -455,18 +449,21 @@ Name: day_date, dtype: object
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define DataCamp modules</span>
 <span class="n">modules</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Intro. to Python (chpts. 2-3); Data Manipulation with pandas (course)&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Writing your own functions (chpt.)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Intro. to Shell, Intro. to GitHub (chpts.)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Joining Data with pandas (chpts. 1-2)&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Regular Expressions for Pattern Matching (chpt.)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Text preprocessing, POS tagging and NER (chpt.)&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Supervised Learning with scikit-learn (course)&quot;</span><span class="p">,</span>
            <span class="s2">&quot;&quot;</span><span class="p">,</span>
            <span class="s2">&quot;Intro. to SQL (chpts. 1-2)&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">]</span>
+           <span class="s2">&quot;&quot;</span><span class="p">]</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataCamp module(s) (if any)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">modules</span>
 </pre></div>
@@ -476,18 +473,23 @@ Name: day_date, dtype: object
 <div class="cell tag_hide_input tag_toggle docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define assignments</span>
-<span class="n">assignments</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;First Latex Submission (solo, due Sunday 04-05)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Take Home Exam (due Sunday night)&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Quiz 1&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;NotebookLLM (due Sunday 04-26)&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Quiz 2&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final project initial analysis (due Friday 05-15)&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="n">assignments</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;First Latex Submission (Me Search, due Sunday 07-05)&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Take Home Exam (due Sunday 07-12)&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;NotebookLM (due Sunday 07-19)&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Quiz 1&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Quiz 2&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Final project initial analysis (due Friday 08-07)&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
                <span class="s2">&quot;Quiz 3&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final project milestone 2 (due Tuesday 05-26)&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Quiz 4&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;Quiz 5 (SQL)&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Final lightning talks (paper + repo + website due Sunday 06-07)&quot;</span><span class="p">]</span>
+               <span class="s2">&quot;Final project milestone 2 (due Tuesday 08-18)&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;Final lightning talks (paper + repo + website due Sunday 08-30)&quot;</span><span class="p">]</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">assignments</span>
 </pre></div>
@@ -512,118 +514,106 @@ Name: day_date, dtype: object
   </thead>
   <tbody>
     <tr>
-      <td>Tuesday 03-31</td>
+      <td>Tuesday 06-30</td>
       <td>Course intro. & syllabus review</td>
       <td></td>
-      <td>First Latex Submission (solo, due Sunday 04-05)</td>
+      <td>First Latex Submission (Me Search, due Sunday 07-05)</td>
     </tr>
     <tr>
-      <td>Thursday 04-02</td>
+      <td>Thursday 07-02</td>
       <td>Pandas</td>
       <td>Intro. to Python (chpts. 2-3); Data Manipulation with pandas (course)</td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 04-07</td>
+      <td>Tuesday 07-07</td>
       <td>Pandas</td>
       <td></td>
-      <td>Take Home Exam (due Sunday night)</td>
+      <td>Take Home Exam (due Sunday 07-12)</td>
     </tr>
     <tr>
-      <td>Thursday 04-09</td>
+      <td>Thursday 07-09</td>
+      <td>NO CLASS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 07-14</td>
       <td>Pandas</td>
       <td></td>
+      <td>NotebookLM (due Sunday 07-19)</td>
+    </tr>
+    <tr>
+      <td>Thursday 07-16</td>
+      <td>User-defined functions</td>
+      <td>Writing your own functions (chpt.)</td>
       <td>Quiz 1</td>
     </tr>
     <tr>
-      <td>Tuesday 04-14</td>
-      <td>User-defined functions</td>
-      <td>Writing your own functions (chpt.)</td>
+      <td>Tuesday 07-21</td>
+      <td>Workflow basics: command line & Github</td>
+      <td>Intro. to Shell, Intro. to GitHub (chpts.)</td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 04-16</td>
-      <td>Workflow basics: command line & Github</td>
-      <td>Intro. to Shell, Intro. to GitHub (chpts.)</td>
-      <td>NotebookLLM (due Sunday 04-26)</td>
-    </tr>
-    <tr>
-      <td>Tuesday 04-21</td>
+      <td>Thursday 07-23</td>
       <td>Merging data</td>
       <td>Joining Data with pandas (chpts. 1-2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 07-28</td>
+      <td>Regular expressions (Regex)</td>
+      <td>Regular Expressions for Pattern Matching (chpt.)</td>
       <td>Quiz 2</td>
     </tr>
     <tr>
-      <td>Thursday 04-23</td>
-      <td>Conference</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Tuesday 04-28</td>
-      <td>Regular expressions (Regex)</td>
-      <td>Regular Expressions for Pattern Matching (chpt.)</td>
-      <td>Final project initial analysis (due Friday 05-15)</td>
-    </tr>
-    <tr>
-      <td>Thursday 04-30</td>
+      <td>Thursday 07-30</td>
       <td>Text-as-data 1 (text mining)</td>
       <td>Text preprocessing, POS tagging and NER (chpt.)</td>
-      <td></td>
+      <td>Final project initial analysis (due Friday 08-07)</td>
     </tr>
     <tr>
-      <td>Tuesday 05-05</td>
+      <td>Tuesday 08-04</td>
       <td>Text-as-data 2 (topic modeling)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-07</td>
+      <td>Thursday 08-06</td>
       <td>APIs</td>
       <td></td>
       <td>Quiz 3</td>
     </tr>
     <tr>
-      <td>Tuesday 05-12</td>
+      <td>Tuesday 08-11</td>
       <td>Social Network Visualization</td>
       <td></td>
-      <td>Final project milestone 2 (due Tuesday 05-26)</td>
+      <td>Final project milestone 2 (due Tuesday 08-18)</td>
     </tr>
     <tr>
-      <td>Thursday 05-14</td>
+      <td>Thursday 08-13</td>
       <td>Supervised machine learning 1</td>
       <td>Supervised Learning with scikit-learn (course)</td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 05-19</td>
+      <td>Tuesday 08-18</td>
       <td>Supervised machine learning 2</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-21</td>
+      <td>Thursday 08-20</td>
       <td>SQL</td>
       <td>Intro. to SQL (chpts. 1-2)</td>
-      <td>Quiz 4</td>
-    </tr>
-    <tr>
-      <td>Tuesday 05-26</td>
-      <td>Grouped Meetings</td>
-      <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-28</td>
-      <td>Grouped Meetings</td>
+      <td>Tuesday 08-25</td>
+      <td>Final lightning talks</td>
       <td></td>
-      <td>Quiz 5 (SQL)</td>
-    </tr>
-    <tr>
-      <td>Tuesday 06-02</td>
-      <td>Final presentations</td>
-      <td></td>
-      <td>Final lightning talks (paper + repo + website due Sunday 06-07)</td>
+      <td>Final lightning talks (paper + repo + website due Sunday 08-30)</td>
     </tr>
   </tbody>
 </table></div></div>

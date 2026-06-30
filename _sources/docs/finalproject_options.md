@@ -16,6 +16,11 @@ kernelspec:
 You will select one of the following options for your final project:
 
 
+## 0. Summer 2026 World Cup Special
+
+The 2026 FIFA World Cup runs across the United States, Canada, and Mexico through the first weeks of the term, putting a live global social-science laboratory in front of you. Projects under this option investigate any social-scientific question that uses World Cup–related data as its primary lens — for example, sentiment dynamics around match outcomes, host-city economic or transit impacts, betting-market movement versus media coverage, or shifts in political messaging during the tournament.
+
+
 ## 1. Massive Social Media Data
 
 The COVID-19 pandeimic impacted every country globally, with stay-at-home orders in most countries with outbreaks. The unprecendented amount of online activity also provided an opportunity to understand human behavior at a granular scale. Projects will analyze the largest COVID-19 Twitter dataset (n=4 billion) to investigate how COVID-19 interesect with student's particular interests. Examples from this dataset include [election misinformation](https://misinforeview.hks.harvard.edu/article/covid-19-misinformation-and-the-2020-u-s-presidential-election/), [liberal and conservative bots pushing misinformation](https://www.nytimes.com/2020/10/29/technology/twitter-bots-poised-to-spread-disinformation-before-election.html), and [KPop driving public health practices like mask wearking](https://arxiv.org/pdf/2110.04149.pdf).

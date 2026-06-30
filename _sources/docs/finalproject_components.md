@@ -15,7 +15,7 @@ kernelspec:
 
 ## Milestone 1
 
-**Due Friday 05-15, 11:59 PM EST.** Submit individually on Canvas.
+**Due Friday 08-07, 11:59 PM EST.** Submit individually on Canvas.
 
 Before starting milestone 1:
 
@@ -30,7 +30,7 @@ Please submit your milestone 1 memo on Canvas. These will be graded.
 
 ## Milestone 2
 
-**Due Tuesday 05-26, 11:59 PM EST.** Submit individually on Canvas as a link to your repo.
+**Due Tuesday 08-18, 11:59 PM EST.** Submit individually on Canvas as a link to your repo.
 
 By Milestone 2 you should have a **public GitHub repository** for your project containing:
 
@@ -45,8 +45,8 @@ Milestone 2 is just about getting the repo set up — you do not need to be clos
 
 ## Final Deliverables
 
-**Final presentations: Tuesday 06-02, in class (last day of class).**
-**Paper + repo + website due: Sunday 06-07, 11:59 PM EST.**
+**Final presentations: Tuesday 08-25, in class (last day of class).**
+**Paper + repo + website due: Sunday 08-30, 11:59 PM EST.**
 
 Final deliverables are worth **45% of your grade** and consist of four pieces:
 
@@ -78,13 +78,13 @@ You are expected to use AI coding assistants for analysis *and* for website gene
 
 A public-facing site that demos the entire project. It should tell the story end-to-end: **question → data → method → result → takeaway.** Embed your key figures so a visitor can grasp the project in 2–3 minutes.
 
-- Must be **live and linkable** by the Sunday 06-07 deadline.
+- Must be **live and linkable** by the Sunday 08-30 deadline.
 - **Pushes after the deadline receive a 0** for the website component.
 - **Suggested stack: React + Vercel** — a tutorial walking through this setup will be released; you are free to use a different stack if you prefer (e.g., GitHub Pages with Jupyter Book or Quarto, Streamlit, static HTML).
 
 ### 4. Lightning Talk
 
-In-class on **Tuesday 06-02**:
+In-class on **Tuesday 08-25**:
 
 - **90–120 seconds, hard stop.**
 - Plus one instructor question + 30 seconds to respond.
@@ -95,7 +95,7 @@ In-class on **Tuesday 06-02**:
 
 ## Next week — optional consultations
 
-I will release 10-minute consultation slots for the week of 05-26. These are **optional** but encouraged if you want to sanity-check your direction before the final stretch.
+I will release 10-minute consultation slots for the week of 08-18. These are **optional** but encouraged if you want to sanity-check your direction before the final stretch.
 
 ---
 
