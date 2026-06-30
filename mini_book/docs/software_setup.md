@@ -15,7 +15,7 @@ kernelspec:
 
 **Please use Slack instead of emailing the instructor or TA(s)**, as other students will likely share your questions and may be able to answer them too. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other's questions. 
 
-There is one Slack channel for the course: `#qss20-s26`. Use it for logistics, schedule, projects, due dates, announcements, general chat, and technical questions.
+There is one Slack channel for the course: `#qss20-x26`. Use it for logistics, schedule, projects, due dates, announcements, general chat, and technical questions.
 
 - **Locally-installed Python**. While cloud computing is common in data science, the baseline for code development is to work locally. So the main interface we will use to code is your own laptop, on which you will install Python and relevant packages. 
 
