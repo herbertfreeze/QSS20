@@ -48,7 +48,7 @@ Milestone 2 is just about getting the repo set up — you do not need to be clos
 **Final presentations: Tuesday 08-25, in class (last day of class).**
 **Paper + repo + website due: Sunday 08-30, 11:59 PM EST.**
 
-Final deliverables are worth **45% of your grade** and consist of four pieces:
+Final deliverables are worth **30% of your grade** and consist of four pieces (the final-project rollup totals 45% of the course grade once Milestone 1 (10%) and Milestone 2 (5%) are included; see the Evaluation page):
 
 ### 1. Paper (6 pages)
 
